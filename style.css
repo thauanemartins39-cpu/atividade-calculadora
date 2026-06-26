@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FCE4EC; /* Fundo da página rosa bem claro */
+}
+.botoes-cientificos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.calculadora {
+    width: 340px;
+    padding: 20px;
+    background: #81D4FA; /* Corpo da calculadora em azul mais vivo */
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.1);
+    border: 2px solid white;
+}
+
+#visor {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 15px;
+    font-size: 32px;
+    text-align: right;
+    background-color: #424242; /* Visor cinza-escuro */
+    color: #FF1493; /* Texto em rosa neon mais forte */
+    border: none;
+    border-radius: 10px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);
+}
+
+button {
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.05);
+    font-size: 1.2em;    
+    background-color: #FFEBEE; /* Botões de número em rosa bem claro */
+    color: #AD1457; /* Texto dos números em pink escuro */
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.operador, .botoes-cientificos button {
+    background-color: #EC407A; /* Botões de operação em rosa-choque mais forte */
+    color: white;
+}
+
+.limpar {
+    background-color: #1976D2; /* Botão AC em azul escuro */
+    color: white;
+}
+
+.igual {
+    background-color: #0D47A1; /* Botão de igual em azul bem escuro */
+    color: white;
+}
+
+.parenteses {
+    background-color: #EC407A; /* Cor rosa-choque mais forte para parênteses */
+    color: white;
+}
+
+.apagar {
+    background-color: #2196F3; /* Botão de apagar em azul */
+    color: white;
+}

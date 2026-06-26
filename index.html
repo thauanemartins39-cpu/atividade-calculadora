@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora Completa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculadora">
+        <input type="text" id="visor" disabled>
+        
+        <div class="botoes-cientificos">
+            <button onclick="calcCientifico('sin')">sin</button>
+            <button onclick="calcCientifico('cos')">cos</button>
+            <button onclick="calcCientifico('tan')">tan</button>
+            <button onclick="calcCientifico('sqrt')">√</button>
+            <button onclick="calcCientifico('pow')">xʸ</button>
+        </div>
+
+        <div class="botoes">
+            <!-- Linha 1 -->
+            <button onclick="limparTudo()" class="limpar">AC</button>
+            <button onclick="adicionar('(')" class="parenteses">(</button>
+            <button onclick="adicionar(')')" class="parenteses">)</button>
+            <button onclick="adicionar('/')" class="operador">÷</button>
+            <!-- Linha 2 -->
+            <button onclick="adicionar('7')">7</button>
+            <button onclick="adicionar('8')">8</button>
+            <button onclick="adicionar('9')">9</button>
+            <button onclick="adicionar('*')" class="operador">×</button>
+            <!-- Linha 3 -->
+            <button onclick="adicionar('4')">4</button>
+            <button onclick="adicionar('5')">5</button>
+            <button onclick="adicionar('6')">6</button>
+            <button onclick="adicionar('-')" class="operador">-</button>
+            <!-- Linha 4 -->
+            <button onclick="adicionar('1')">1</button>
+            <button onclick="adicionar('2')">2</button>
+            <button onclick="adicionar('3')">3</button>
+            <button onclick="adicionar('+')" class="operador">+</button>
+            <!-- Linha 5 -->
+            <button onclick="adicionar('0')">0</button>
+            <button onclick="adicionar('.')">,</button>
+            <button onclick="calcular()" class="igual">=</button>
+            <button onclick="apagar()" class="apagar">⌫</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
